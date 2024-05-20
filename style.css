@@ -39,202 +39,201 @@ body {
     background: var(--White);
     padding: 2rem;
     border-radius: 10px;
+}
+header {
+    .header-image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .header-title {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-size: 2rem;
+        color: var(--Dark-Charcoal); 
+        margin-top: 1rem;  
+    }
+    .header-descript {
+        font-family: "Outfit", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--Wenge-Brown);
+        margin: 1rem 0 1rem 0;
+    }
+}
+section.timing{
+    width: 100%;
+    height: auto;
+    background: var(--Rose-White);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
 
-    header {
-        .header-image {
-            width: 100%;
-            object-fit: cover;
-            border-radius: 10px;
+    .timing-title {
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+        color: var(--Dark-Raspberry);
+        
+    }
+    ul {
+        list-style: none; 
+        margin: 1rem 0 1rem 1rem;
+    }
+    ul li {
+        color: var(--Wenge-Brown); 
+        margin-top: 0.5rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    ul li::before {
+        content: "•"; 
+        color: var(--Dark-Raspberry); 
+        display: inline-block; 
+        width: 1em; 
+        margin-left: -0em; 
+    }
+    ul li span {
+        color: var(--Dark-Charcoal);
+        margin-left: 1rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+    }
+}
+section.ingredients {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+
+    .ingredients-title {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        color: var(--Nutmeg);
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    ul {
+        list-style: none;
+        margin-top: 1rem;
+    }
+    ul li {
+        color: var(--Wenge-Brown); 
+        margin-top: 0.5rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-left: 1rem;
+    }
+    ul li::before {
+        content: "•"; 
+        color: var(--Dark-Raspberry); 
+        display: inline-block; 
+        width: 1em; 
+        margin-left: -1em; 
+    }
+    ul li span {
+        margin-left: 1rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+    }
+}
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--Light-Grey);
+}
+section.instructions {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    .instructions-title {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        color: var(--Nutmeg);
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    ol {
+        list-style-type: none; 
+        counter-reset: item; 
+        color: var(--Nutmeg);
+        margin-top: 1rem;
+    }
+    ol li {
+        counter-increment: item; 
+        color: var(--Wenge-Brown); 
+        margin-top: 0.5rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+        text-indent: -2em;
+        padding-left: 1em;
+        margin-left: 1rem;
+    }
+    ol li::before {
+        content: counter(item) ". "; 
+        color: var(--Nutmeg);
+        font-family: "Outfit", sans-serif;
+        font-weight: 700; 
+    }
+    ol li span {
+        color: var(--Dark-Charcoal);
+        margin-left: 1rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+    }
+}
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--Light-Grey);
+}
+section.nutrition {
+    width: 100%;
+    height: auto;
+
+    .nutrition-title {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        color: var(--Nutmeg);
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .nutrition-descript {
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: var(--Wenge-Brown);
+        margin-top: 1rem;
+    }
+    .nutrition-tableau {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        .nutrition-item {
+            display: contents;
         }
-        .header-title {
-            font-family: "Young Serif", serif;
-            font-weight: 400;
-            font-size: 2rem;
-            color: var(--Dark-Charcoal); 
-            margin-top: 1rem;  
-        }
-        .header-descript {
+        .item {
+            grid-column: 1;
             font-family: "Outfit", sans-serif;
-            font-size: 1rem;
             font-weight: 400;
             color: var(--Wenge-Brown);
-            margin: 1rem 0 1rem 0;
+            margin-left: 2rem;
         }
-    }
-    section.timing{
-        width: 100%;
-        height: auto;
-        background: var(--Rose-White);
-        border-radius: 10px;
-        padding: 1rem;
-        margin-top: 1rem;
-    
-        .timing-title {
+        .value {
+            grid-column: 2;
             font-family: "Outfit", sans-serif;
-            font-weight: 700;
-            color: var(--Dark-Raspberry);
+            font-weight: 600;   
+            color: var(--Nutmeg);
             
         }
-        ul {
-            list-style: none; 
-            margin: 1rem 0 1rem 1rem;
-        }
-        ul li {
-            color: var(--Wenge-Brown); 
-            margin-top: 0.5rem;
-            font-family: "Outfit", sans-serif;
-            font-weight: 400;
-            font-size: 1rem;
-        }
-        ul li::before {
-            content: "•"; 
-            color: var(--Dark-Raspberry); 
-            display: inline-block; 
-            width: 1em; 
-            margin-left: -0em; 
-        }
-        ul li span {
-            color: var(--Dark-Charcoal);
-            margin-left: 1rem;
-            font-family: "Outfit", sans-serif;
-            font-weight: 600;
-        }
-    }
-    section.ingredients {
-        width: 100%;
-        height: auto;
-        margin-bottom: 2rem;
-    
-        .ingredients-title {
-            font-family: "Young Serif", serif;
-            font-weight: 400;
-            color: var(--Nutmeg);
-            margin-top: 1rem;
-            font-size: 1.5rem;
-        }
-        ul {
-            list-style: none;
-            margin-top: 1rem;
-        }
-        ul li {
-            color: var(--Wenge-Brown); 
-            margin-top: 0.5rem;
-            font-family: "Outfit", sans-serif;
-            font-weight: 400;
-            font-size: 0.9rem;
-            margin-left: 1rem;
-        }
-        ul li::before {
-            content: "•"; 
-            color: var(--Dark-Raspberry); 
-            display: inline-block; 
-            width: 1em; 
-            margin-left: -1em; 
-        }
-        ul li span {
-            margin-left: 1rem;
-            font-family: "Outfit", sans-serif;
-            font-weight: 400;
-        }
-    }
-    hr {
-        width: 100%;
-        border: none;
-        border-top: 1px solid var(--Light-Grey);
-    }
-    section.instructions {
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    
-        .instructions-title {
-            font-family: "Young Serif", serif;
-            font-weight: 400;
-            color: var(--Nutmeg);
-            margin-top: 1rem;
-            font-size: 1.5rem;
-        }
-        ol {
-            list-style-type: none; 
-            counter-reset: item; 
-            color: var(--Nutmeg);
-            margin-top: 1rem;
-        }
-        ol li {
-            counter-increment: item; 
-            color: var(--Wenge-Brown); 
-            margin-top: 0.5rem;
-            font-family: "Outfit", sans-serif;
-            font-weight: 400;
-            font-size: 0.9rem;
-            text-indent: -2em;
-            padding-left: 1em;
-            margin-left: 1rem;
-        }
-        ol li::before {
-            content: counter(item) ". "; 
-            color: var(--Nutmeg);
-            font-family: "Outfit", sans-serif;
-            font-weight: 700; 
-        }
-        ol li span {
-            color: var(--Dark-Charcoal);
-            margin-left: 1rem;
-            font-family: "Outfit", sans-serif;
-            font-weight: 600;
-        }
-    }
-    hr {
-        width: 100%;
-        border: none;
-        border-top: 1px solid var(--Light-Grey);
-    }
-    section.nutrition {
-        width: 100%;
-        height: auto;
-    
-        .nutrition-title {
-            font-family: "Young Serif", serif;
-            font-weight: 400;
-            color: var(--Nutmeg);
-            margin-top: 1rem;
-            font-size: 1.5rem;
-        }
-        .nutrition-descript {
-            font-family: "Outfit", sans-serif;
-            font-weight: 400;
-            color: var(--Wenge-Brown);
-            margin-top: 1rem;
-        }
-        .nutrition-tableau {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-top: 1rem;
+        hr {
+            grid-column: 1 / span 2;
             margin-bottom: 1rem;
-    
-            .nutrition-item {
-                display: contents;
-            }
-            .item {
-                grid-column: 1;
-                font-family: "Outfit", sans-serif;
-                font-weight: 400;
-                color: var(--Wenge-Brown);
-                margin-left: 2rem;
-            }
-            .value {
-                grid-column: 2;
-                font-family: "Outfit", sans-serif;
-                font-weight: 600;   
-                color: var(--Nutmeg);
-                
-            }
-            hr {
-                grid-column: 1 / span 2;
-                margin-bottom: 1rem;
-                margin-top: 1rem;
-            }
+            margin-top: 1rem;
         }
     }
 }
