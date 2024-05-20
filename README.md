@@ -77,6 +77,5 @@ I'm going to work more on CSS grid, which I never use. I think knowing how to us
 
 - Frontend Mentor - [@ClementServant](https://www.frontendmentor.io/profile/ClementServant)
 - Page Facebook - [@ClemCode Creations](https://www.facebook.com/profile.php?id=61558749970948)
-- Profil LinkedIn - [@Clement Servant](www.linkedin.com/in/servantclement)
 
 
