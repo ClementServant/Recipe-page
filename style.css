@@ -239,3 +239,11 @@ body {
     }
 }
 
+/* Responsive */
+@media(max-width: 768px) {
+    .recipe {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
