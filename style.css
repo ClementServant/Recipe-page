@@ -3,11 +3,11 @@
 
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Outfit", "Young Serif", sans-serif, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Outfit", "Young Serif", sans-serif, serif;
 } 
 
 /* Déclaration :root */
@@ -35,10 +35,10 @@ body {
     place-items: center;
     width: 50%;
     height: 50%;
-    margin: 10% auto;
+    margin: 8% auto;
     background: var(--White);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 header {
     .header-image {
@@ -51,14 +51,14 @@ header {
         font-weight: 400;
         font-size: 2rem;
         color: var(--Dark-Charcoal); 
-        margin-top: 1rem;  
+        margin-top: 2rem;  
     }
     .header-descript {
         font-family: "Outfit", sans-serif;
         font-size: 1rem;
         font-weight: 400;
         color: var(--Wenge-Brown);
-        margin: 1rem 0 1rem 0;
+        margin: 1.5rem 0 1.5rem 0;
     }
 }
 section.timing{
@@ -66,11 +66,12 @@ section.timing{
     height: auto;
     background: var(--Rose-White);
     border-radius: 10px;
-    padding: 1rem;
-    margin-top: 1rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
 
     .timing-title {
         font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
         font-weight: 700;
         color: var(--Dark-Raspberry);
         
@@ -81,7 +82,7 @@ section.timing{
     }
     ul li {
         color: var(--Wenge-Brown); 
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         font-family: "Outfit", sans-serif;
         font-weight: 400;
         font-size: 1rem;
@@ -103,14 +104,14 @@ section.timing{
 section.ingredients {
     width: 100%;
     height: auto;
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
 
     .ingredients-title {
         font-family: "Young Serif", serif;
         font-weight: 400;
         color: var(--Nutmeg);
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     ul {
         list-style: none;
@@ -145,8 +146,7 @@ hr {
 section.instructions {
     width: 100%;
     height: auto;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
 
     .instructions-title {
         font-family: "Young Serif", serif;
@@ -193,6 +193,7 @@ hr {
 section.nutrition {
     width: 100%;
     height: auto;
+    margin: 2rem 0 2rem 0;
 
     .nutrition-title {
         font-family: "Young Serif", serif;
